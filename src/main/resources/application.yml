@@ -10,6 +10,9 @@ eureka:
     serviceUrl:
       defaultZone: http://localhost:8781/eureka/
 zuul:
+  host:
+    socket-timeout-millis: 4000
+    connect-timeout-millis: 6000
   routes:
 #    cache-services:
 #      path: /cache-services/**
